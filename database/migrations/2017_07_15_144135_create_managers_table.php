@@ -17,7 +17,10 @@ class CreateManagersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
+
+            //TODO: REMOVE COLUMN AND ADD REFERENCE
             $table->string('department');
+
             $table->string('phone_number');
             $table->timestamps();
         });

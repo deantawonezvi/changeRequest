@@ -79,9 +79,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('lib/angular/angular.min.js') }}"></script>
-    <script src="{{ asset('js/index.min.js') }}"></script>
     <script src="{{asset('lib/select2/dist/js/select2.js')}}"></script>
     <script>
         $(document).ready(function () {

@@ -17,3 +17,5 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/test', 'HomeController@test');
+
+Route::post('/change-request/add', 'ChangeRequestController@addChangeRequest');

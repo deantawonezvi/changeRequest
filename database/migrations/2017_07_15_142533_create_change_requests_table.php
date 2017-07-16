@@ -17,10 +17,12 @@ class CreateChangeRequestsTable extends Migration
             $table->increments('id');
             $table->string('reference')->unique();
             $table->string('name');
+            $table->string('priority');
             $table->text('description');
             $table->unsignedInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('set null');
             $table->date('initiation_date');
+            $table->date('required_date');
             $table->date('validation_date');
 
             $table->string('status');
